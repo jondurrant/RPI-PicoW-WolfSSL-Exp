@@ -1,0 +1,6 @@
+[submodule "lib/wolfssl"]
+	path = lib/wolfssl
+	url = https://github.com/wolfSSL/wolfssl
+[submodule "lib/FreeRTOS-Kernel"]
+	path = lib/FreeRTOS-Kernel
+	url = https://github.com/FreeRTOS/FreeRTOS-Kernel
