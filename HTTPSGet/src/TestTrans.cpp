@@ -108,22 +108,11 @@ bool TestTrans::testTrans(){
 	}
 
 	retVal = 1;
-	int count = 0;
 
-	while (retVal >= 0){
+	while (retVal > 0){
 		retVal = sockTrans.transRead( buf, sizeof(buf));
 		if (retVal > 0){
 			sockTrans.debugPrintBuffer("READ:", buf, retVal);
-			count = 0;
-		}
-
-		//If no data for a while then abort
-		if (retVal == 0){
-			count++;
-			vTaskDelay(30);
-		}
-		if (count > 30){
-			break;
 		}
 	}
 

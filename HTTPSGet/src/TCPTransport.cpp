@@ -124,8 +124,6 @@ bool TCPTransport::transConnect(){
 		return false;
 	}
 
-	int nonblock=1;
-	ioctlsocket(xSock, FIONBIO, &nonblock);
 
 	printf("Connect success\n");
 	return true;
