@@ -71,7 +71,7 @@ bool TestTrans::testConnect(){
 	if (WifiHelper::isJoined()) {
 		return true;
 	}
-	if (WifiHelper::join(WIFI_SSID, WIFI_SSID)){
+	if (WifiHelper::join(WIFI_SSID, WIFI_PASSWORD)){
 		if (WifiHelper::isJoined()) {
 			return true;
 		} else {
